@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 20px;
+    
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #232323;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 25px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #faf8f8;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .icon {
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    display: grid;
+    place-content: center;
+    font-size: 1rem;
+  }
+  
+  .header {
+    width: 100%;
+    height: 10vh;
+    background-color: #001F8B;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 1.25rem;
+  }
+  
+  .header > div {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon + div {
+    align-self: center;
+    font-weight: 500;
+    color: #f0ecec;
+    font-size: 1.2em;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    overflow-y: auto;
+    width: 100%;
+    height: 72vh;
+    overflow: auto;
+    background-color: #DAE5F5;
+    overflow-x: hidden;
+  }
+  
+  .input {
+    width: 100%;
+    height: 18vh;
+    padding: 1rem 1.5rem;
+    background-color: #001F8B;
+  }
+  
+  .input textarea {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    outline: none;
+    border: none;
+    padding: .75rem;
+    padding-top:1.25rem;
+    resize: none;
+    font-size: 1rem;
+    border-radius: 7px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #e6e4e4;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #989696;
+  }
+  
+  textarea + div {
+    position: absolute;
+    right: 2rem;
+    bottom: 1.35rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .notes {
+    width: 96%;
+    margin: 15px;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .dateTime {
+    font-size: 1rem;
+    width: 96%;
+    margin: .5px;
+    text-align: right;
+    font-weight: 500;
+    padding-bottom:10px;;
+  }
+  
+  .note {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    gap: 1.2rem;
+    border: 5px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px #00000040;
+    overflow-x: hidden;
+  }
+  
+  .noteContent {
+    display: flex;
+    margin:15px;
+    font-size: large;
+    font-weight: 400;
+    width: 90%;
+    line-height: 1.5;
+  }
+
+
+  
+  @media (min-width: 768px) {
+    .notes {
+      font-size: 1rem;
+    }
+    .note {
+      padding: 1rem 1.25rem;
+      line-height: 1.5;
+    }
+    .input {
+      height: 25vh;
+    }
+    .content{
+      height: 65vh;
+    }
+    .dateTime {
+      display: block;
+      width: 100%;
+      text-align: right;
+      font-size: 1rem;
+    }
+    .noteContent {
+      width: 98%;
+      font-family: 'roboto', sans-serif;
+    }
+  }
